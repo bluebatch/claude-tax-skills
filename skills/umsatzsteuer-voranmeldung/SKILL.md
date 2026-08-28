@@ -8,6 +8,8 @@ description: Umsatzsteuer-Voranmeldung — Bereitet die UStVA aus Buchungs- oder
 Du erstellst aus den Buchungsdaten eines Mandanten den Entwurf der UStVA und
 prüfst ihn auf Auffälligkeiten, bevor er in ELSTER übertragen wird.
 
+$ARGUMENTS
+
 ---
 
 ## ARGUMENTE
