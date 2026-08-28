@@ -1,0 +1,18 @@
+{
+  "name": "belegpruefung",
+  "displayName": "Belegprüfung",
+  "version": "1.0.0",
+  "description": "Prüft Eingangs- und Ausgangsrechnungen auf die Pflichtangaben nach § 14 UStG und formuliert die Rückfrage an den Mandanten.",
+  "author": {
+    "name": "bluebatch",
+    "url": "https://bluebatch.io"
+  },
+  "repository": "https://github.com/bluebatch/claude-tax-skills",
+  "license": "UNLICENSED",
+  "keywords": [
+    "ustg",
+    "vorsteuer",
+    "rechnung",
+    "beleg"
+  ]
+}

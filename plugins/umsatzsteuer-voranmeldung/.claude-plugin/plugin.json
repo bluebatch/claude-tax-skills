@@ -1,0 +1,18 @@
+{
+  "name": "umsatzsteuer-voranmeldung",
+  "displayName": "Umsatzsteuer-Voranmeldung",
+  "version": "1.0.0",
+  "description": "Bereitet die UStVA aus Buchungsdaten vor, ordnet die ELSTER-Kennzahlen zu und plausibilisiert gegen den Vormonat.",
+  "author": {
+    "name": "bluebatch",
+    "url": "https://bluebatch.io"
+  },
+  "repository": "https://github.com/bluebatch/claude-tax-skills",
+  "license": "UNLICENSED",
+  "keywords": [
+    "ustva",
+    "elster",
+    "zahllast",
+    "vorsteuer"
+  ]
+}
