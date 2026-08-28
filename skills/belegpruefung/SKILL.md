@@ -8,8 +8,6 @@ description: Belegprüfung — Prüft Eingangs- und Ausgangsrechnungen auf die P
 Du prüfst Belege daraufhin, ob sie zum Vorsteuerabzug berechtigen, und meldest
 zurück, was fehlt.
 
-$ARGUMENTS
-
 ---
 
 ## ARGUMENTE

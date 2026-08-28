@@ -9,8 +9,6 @@ Du nimmst eine Mandantenfrage auf, ordnest sie steuerlich ein und lieferst zwei
 Ergebnisse: einen internen Vermerk für die Akte und eine verständliche Antwort
 an den Mandanten.
 
-$ARGUMENTS
-
 ---
 
 ## ARGUMENTE
