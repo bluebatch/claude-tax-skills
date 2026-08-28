@@ -1,0 +1,17 @@
+{
+  "name": "mandantenkommunikation",
+  "displayName": "Mandantenkommunikation",
+  "description": "Mandantenfragen beantworten, Unterlagen anfordern und Fristen mitteilen.",
+  "version": "1.0.0",
+  "keywords": [
+    "mandant",
+    "kommunikation",
+    "fristen"
+  ],
+  "author": {
+    "name": "bluebatch",
+    "url": "https://bluebatch.io"
+  },
+  "repository": "https://github.com/bluebatch/claude-tax-skills",
+  "license": "UNLICENSED"
+}

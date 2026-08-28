@@ -8,17 +8,17 @@
   "description": "Claude-Skills für die tägliche Arbeit in der Steuerkanzlei.",
   "plugins": [
     {
-      "name": "belegpruefung",
-      "source": "./plugins/belegpruefung",
-      "displayName": "Belegprüfung",
-      "description": "Prüft Eingangs- und Ausgangsrechnungen auf die Pflichtangaben nach § 14 UStG und formuliert die Rückfrage an den Mandanten.",
+      "name": "finanzbuchhaltung",
+      "source": "./plugins/finanzbuchhaltung",
+      "displayName": "Finanzbuchhaltung",
+      "description": "Belege prüfen, kontieren und die Umsatzsteuer-Voranmeldung vorbereiten.",
       "version": "1.0.0",
       "category": "steuerkanzlei",
       "keywords": [
-        "ustg",
-        "vorsteuer",
-        "rechnung",
-        "beleg"
+        "buchhaltung",
+        "umsatzsteuer",
+        "beleg",
+        "kontierung"
       ],
       "author": {
         "name": "bluebatch",
@@ -28,17 +28,17 @@
       "license": "UNLICENSED"
     },
     {
-      "name": "umsatzsteuer-voranmeldung",
-      "source": "./plugins/umsatzsteuer-voranmeldung",
-      "displayName": "Umsatzsteuer-Voranmeldung",
-      "description": "Bereitet die UStVA aus Buchungsdaten vor, ordnet die ELSTER-Kennzahlen zu und plausibilisiert gegen den Vormonat.",
+      "name": "lohnbuchhaltung",
+      "source": "./plugins/lohnbuchhaltung",
+      "displayName": "Lohnbuchhaltung",
+      "description": "Entgeltabrechnungen prüfen, Minijobs abgrenzen und Reisekosten abrechnen.",
       "version": "1.0.0",
       "category": "steuerkanzlei",
       "keywords": [
-        "ustva",
-        "elster",
-        "zahllast",
-        "vorsteuer"
+        "lohn",
+        "entgelt",
+        "minijob",
+        "reisekosten"
       ],
       "author": {
         "name": "bluebatch",
@@ -48,16 +48,16 @@
       "license": "UNLICENSED"
     },
     {
-      "name": "mandantenanfrage-beantworten",
-      "source": "./plugins/mandantenanfrage-beantworten",
-      "displayName": "Mandantenanfrage beantworten",
-      "description": "Ordnet eine steuerliche Mandantenfrage ein und liefert Antwortmail plus internen Prüfvermerk.",
+      "name": "mandantenkommunikation",
+      "source": "./plugins/mandantenkommunikation",
+      "displayName": "Mandantenkommunikation",
+      "description": "Mandantenfragen beantworten, Unterlagen anfordern und Fristen mitteilen.",
       "version": "1.0.0",
       "category": "steuerkanzlei",
       "keywords": [
         "mandant",
-        "anfrage",
-        "vermerk"
+        "kommunikation",
+        "fristen"
       ],
       "author": {
         "name": "bluebatch",
