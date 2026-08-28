@@ -1,0 +1,47 @@
+{
+  "name": "bluebatch-tax",
+  "owner": {
+    "name": "bluebatch",
+    "email": "max@bluebatch.io",
+    "url": "https://bluebatch.io"
+  },
+  "description": "Claude-Skills für die tägliche Arbeit in der Steuerkanzlei.",
+  "plugins": [
+    {
+      "name": "belegpruefung",
+      "source": "./skills/belegpruefung",
+      "displayName": "Belegprüfung",
+      "description": "Prüft Eingangs- und Ausgangsrechnungen auf die Pflichtangaben nach § 14 UStG und formuliert die Rückfrage an den Mandanten.",
+      "version": "1.0.0",
+      "category": "steuerkanzlei",
+      "keywords": ["ustg", "vorsteuer", "rechnung", "beleg"],
+      "author": { "name": "bluebatch", "url": "https://bluebatch.io" },
+      "repository": "https://github.com/bluebatch/claude-tax-skills",
+      "license": "UNLICENSED"
+    },
+    {
+      "name": "umsatzsteuer-voranmeldung",
+      "source": "./skills/umsatzsteuer-voranmeldung",
+      "displayName": "Umsatzsteuer-Voranmeldung",
+      "description": "Bereitet die UStVA aus Buchungsdaten vor, ordnet die ELSTER-Kennzahlen zu und plausibilisiert gegen den Vormonat.",
+      "version": "1.0.0",
+      "category": "steuerkanzlei",
+      "keywords": ["ustva", "elster", "zahllast", "vorsteuer"],
+      "author": { "name": "bluebatch", "url": "https://bluebatch.io" },
+      "repository": "https://github.com/bluebatch/claude-tax-skills",
+      "license": "UNLICENSED"
+    },
+    {
+      "name": "mandantenanfrage-beantworten",
+      "source": "./skills/mandantenanfrage-beantworten",
+      "displayName": "Mandantenanfrage beantworten",
+      "description": "Ordnet eine steuerliche Mandantenfrage ein und liefert Antwortmail plus internen Prüfvermerk.",
+      "version": "1.0.0",
+      "category": "steuerkanzlei",
+      "keywords": ["mandant", "anfrage", "vermerk"],
+      "author": { "name": "bluebatch", "url": "https://bluebatch.io" },
+      "repository": "https://github.com/bluebatch/claude-tax-skills",
+      "license": "UNLICENSED"
+    }
+  ]
+}
