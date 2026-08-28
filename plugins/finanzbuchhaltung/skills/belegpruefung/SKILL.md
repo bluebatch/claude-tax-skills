@@ -54,6 +54,13 @@ Steuersatz bzw. Hinweis auf die Steuerbefreiung.
 
 ## ABLAUF
 
+0. **Bei mehr als einem Beleg aufteilen.** Für jeden Beleg im Ordner einen
+   eigenen Aufruf des Subagenten `finanzbuchhaltung:beleg-pruefer` starten, alle
+   parallel. Jeder Agent liest genau einen Beleg und gibt einen kompakten
+   Prüfblock zurück. Grund: Ein Stapel von zweihundert Scans passt nicht in einen
+   Kontext, und ein unlesbarer Beleg soll die übrigen nicht mitreißen. Die Blöcke
+   sammelst du ein und baust daraus die Ausgabe unten. Bei einem einzelnen Beleg
+   lohnt der Umweg nicht, dann selbst prüfen.
 1. **Beleg lesen.** PDF oder Bild öffnen und die neun Pflichtangaben einzeln
    heraussuchen. Nichts raten: was nicht lesbar ist, gilt als "unklar", nicht als
    "fehlt".

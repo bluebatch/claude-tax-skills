@@ -18,6 +18,17 @@ Claude als Arbeitsanweisung lädt.
 | | `unterlagen-anfordern` | Fehlliste in eine Nachforderung übersetzen, die der Mandant beantworten kann |
 | | `fristenmitteilung` | Termine berechnen, über Feiertage schieben, Mandanten informieren |
 
+### Agents
+
+| Plugin | Agent | Zweck |
+|---|---|---|
+| `finanzbuchhaltung` | `beleg-pruefer` | Prüft genau einen Beleg und liefert einen kompakten Prüfblock zurück |
+
+Ein Agent ist kein Slash-Command. Der Skill `belegpruefung` startet ihn bei einem
+Belegstapel selbst, einen Aufruf je Beleg und alle parallel, damit zweihundert
+Scans nicht in einen Kontext müssen. Direkt ansprechen lässt er sich mit
+`@finanzbuchhaltung:beleg-pruefer`.
+
 ## Installation
 
 ### Als Marketplace (empfohlen)
@@ -55,9 +66,14 @@ Alternativ die Skill-Ordner direkt nach `.claude/skills/` im Projekt kopieren.
 └── marketplace.json              ← Katalog, listet die drei Plugins
 plugins/<plugin>/
 ├── .claude-plugin/plugin.json    ← Name, Version, Beschreibung
+├── agents/<agent>.md             ← optional: Subagenten des Plugins
 └── skills/<skill>/
     └── SKILL.md                  ← Frontmatter (name, description) + Arbeitsanweisung
 ```
+
+Agents liegen flach in `agents/`, der Dateiname ist der Agentenname. In einem
+Plugin werden `hooks`, `mcpServers` und `permissionMode` im Frontmatter ignoriert,
+die gibt es nur für Agents unter `.claude/agents/`.
 
 Der Unterordner `skills/` ist Pflicht. Eine `SKILL.md` direkt im
 Plugin-Wurzelverzeichnis lädt zwar die CLI, die Desktop-App meldet dazu aber
